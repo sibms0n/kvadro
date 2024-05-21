@@ -1,0 +1,122 @@
+.bron_section {
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.bron_section_left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgb(154, 154, 154);
+}
+
+.bron_section__imgs img{
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.bron_section_left .slider_section img {
+    max-height: 300px;
+}
+
+.bron_section_right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bron_section_right__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgb(154, 154, 154);
+}
+
+.cod_tovara {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.bron_block_text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bron_section_right__content p {
+    color: #292929;
+}
+
+.text_beetwen {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.bron_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.bron_card {
+    position: relative;
+    padding: 20px;
+    background: #3C5CCF;
+    border-radius: 10px;
+}
+
+.bron_card h5 {
+    color: white;
+    padding: 5px 0;
+}
+
+.bron_card h5:last-child {
+    border-top: 1px solid white;
+    padding-top: 5px;
+}
+
+.circle_proc {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle_proc p {
+    color: #3C5CCF;
+}
+
+.points_bron {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.point_bron {
+    max-width: 500px;
+}
+
+@media (max-width: 1000px) {
+    .bron_section {
+        grid-template-columns: 1fr ;
+    }
+}

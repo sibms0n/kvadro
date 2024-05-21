@@ -1,0 +1,386 @@
+header {
+    background: #F9FAFC;
+}
+
+.header_section {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+
+.header_section svg path {
+    fill: #000000;
+}
+
+.header_section_content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.search_header {
+    border-radius: 14px;
+    display: flex;
+    gap: 5px;
+    padding: 0px 10px;
+    align-items: center;
+    border: 1px solid #00000072;
+}
+
+.search_header input {
+    width: 400px;
+    padding: 10px 15px;
+}
+
+.search_header button {
+    background: #00000000;
+}
+
+.search_header button svg {
+    width: 23px;
+    height: 23px;
+}
+
+.header_section_content__block_right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.image_profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #A9A9A9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_profile img {
+    width: 32px;
+    height: 32px;
+}
+
+.header_section_content__block_right_login {
+    line-height: normal;
+}
+
+.header_section_middle {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 26px 0;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+/* main */
+
+/* section 1 */
+
+.main_section {
+    height: 550px;
+    position: relative;
+
+    display: flex;
+    justify-content: end;
+    line-height: normal;
+    align-items: center;
+}
+
+.main_section__image {
+    position: absolute;
+    max-width: 75%;
+    height: 550px;
+    top: 0;
+    left: 0;
+}
+
+.main_section_text {
+    position: relative;
+    max-width: 75%;
+}
+
+.main_section_text__subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* slider */
+.slider_wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.slider_section {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.slider_container {
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider_block {
+    position: relative;
+    transition: all .3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background: white;
+    min-width: calc(100% / 2);
+}
+
+.slider_block img {
+    max-height: 600px;
+}
+
+.slider_block:hover {
+    box-shadow: 0px 2px 6px rgb(154, 154, 154);
+    opacity: .5;
+}
+
+.slider_block:hover .more {
+    opacity: 1;
+}
+
+.more {
+    width: 80px;
+    height: 80px;
+    background: #00000000;
+    border: 1px solid black;
+    position: absolute;
+    opacity: 0;
+    transition: all .2s;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: calc(50% - 15%);
+}
+
+.more svg path
+ {
+    fill: black;
+}
+
+.feedback_blocks {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feedback_block {
+    max-width: 30%;
+    padding: 15px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 6px rgb(154, 154, 154);
+}
+
+.feedback_block_text{ 
+    flex:  1 1 auto;
+}
+
+.feedback_block_profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.feedback_block_profile img {
+    max-height: 70px;
+}
+
+.stars{
+    display: flex; 
+    gap: 5px;
+    margin-bottom: 40px;
+}
+
+/* btn_slider */
+.rev_btn {
+position: absolute;
+left: 10px;
+top: calc(50% - 10%);
+}
+
+.next_btn {
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 10%);
+}
+
+.next_btn img {
+    transform: rotate(180deg);
+}
+
+.btn_slider {
+    border-radius: 10px;
+    height: 60px;
+    width: 40px;
+    padding: 10px;
+    background: #a9a9a966;
+    transition: all .2s;
+    z-index: 10;
+}
+
+.btn_slider:hover {
+    background: #66666693;
+}
+
+.btn_slider img {
+    object-fit: contain;
+}
+
+/* news */
+
+.news_block {
+    height: 300px;
+}
+
+.news_block_left_content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news_block_left_content h2 {
+    color: #3C5CCF;
+}
+
+.news_block_left_content__end {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: end;
+}
+
+.news_block_right_img img {
+    position: relative;
+    object-fit: contain;
+}
+
+
+/* foooter */
+footer {
+    background: #F9FAFC;
+}
+
+.footer_blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.footer_blocks_contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+    
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer_row__pole {
+    display: flex;
+    gap: 10px; 
+    align-items: center;
+}
+
+
+.footer_column__pole {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.footer_column__pole svg{
+    width: 15px;
+    height: 15px;
+}
+
+.footer_ceti a img {
+    max-width: 50px;
+}
+
+
+@media (max-width: 1000px) {
+    .main_section_text {
+        text-align: end;
+        max-width: 100%;
+    }
+    .main_section__image {
+        max-width: 100%;
+        top: 180px;
+        height: 370px;
+    }
+    .main_section {
+        align-items: start;
+    }
+
+    .header_section_content__block_right_login {
+        display: none;
+    }
+    .search_header input {
+        width: 100%;
+    }
+    .header_section_content {
+        justify-content: end;
+    }
+    .header_section__logo svg {
+        width: 150px;
+    }
+    .header_section {
+        height: 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    .main_blocks{
+        gap: 50px;
+    }
+    .menu{
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .feedback_blocks {
+        flex-direction: column;
+    }
+    .feedback_block {
+        max-width: 100%;
+    }
+    .footer_blocks {
+        gap: 50px;
+    }
+}
+@media (max-width: 430px) {
+    .header_section{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header_section {
+        height: auto;
+    }
+    .slider_section {
+        gap: 10px;
+    }
+}
